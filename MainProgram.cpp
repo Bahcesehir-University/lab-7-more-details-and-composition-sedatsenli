@@ -65,15 +65,15 @@ public:
     }
 
     // TODO 11: declare isSameSize as friend function
-    friend bool isSameSize (Rectangle& r1, const Rectangle& r2);
+    friend bool isSameSize(const Rectangle& r1, const Rectangle& r2);
 };
 
 
 // TODO 12: implement isSameSize
 bool isSameSize(const Rectangle& r1, const Rectangle& r2) {
-    return r1.getArea() == r2.getArea();  // stub
+    
+    return r1.getArea() == r2.getArea(); 
 }
-
 
 class ConstDemo {
 private:
