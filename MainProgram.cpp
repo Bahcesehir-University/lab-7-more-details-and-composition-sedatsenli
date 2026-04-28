@@ -44,7 +44,7 @@ private:
 public:
     // TODO 6: constructor with member initializer list
     Rectangle(double x1, double y1, double x2, double y2)
-        : topLeft(x1,y1), bottomRight(x2,y2) {}  // stub — fix initializer
+        : topLeft(x1, y1), bottomRight(x2, y2) {}  // stub — fix initializer
 
     // TODO 7: const getWidth()
     double getWidth() const { return std::abs(bottomRight.x); }  // stub
@@ -65,7 +65,7 @@ public:
     }
 
     // TODO 11: declare isSameSize as friend function
-    friend bool isSame (Rectangle& r1, const Rectangle& r2);
+    friend bool isSameSize (Rectangle& r1, const Rectangle& r2);
 };
 
 
